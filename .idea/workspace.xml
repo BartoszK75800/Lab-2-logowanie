@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="72f4df5a-db04-4683-a7fa-06dbc26c7576" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BKsoft/Panel.java" afterDir="false" />
+    <list default="true" id="72f4df5a-db04-4683-a7fa-06dbc26c7576" name="Default Changelist" comment="działające okienko">
+      <change afterPath="$PROJECT_DIR$/src/BKsoft/Window.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BKsoft/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BKsoft/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BKsoft/Panel.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,6 +113,14 @@
       <option name="presentableId" value="Default" />
       <updated>1638193317830</updated>
     </task>
+    <task id="LOCAL-00001" summary="działające okienko">
+      <created>1638195441610</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1638195441610</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -126,5 +134,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="działające okienko" />
+    <option name="LAST_COMMIT_MESSAGE" value="działające okienko" />
   </component>
 </project>

@@ -11,7 +11,7 @@ public class Main extends JFrame{
             @Override
             public void run() {
                 try {
-                    Main frame = new Main();
+                    Window frame = new Window();
                     frame.setVisible(true);
                 } catch (Exception e) {
                     e.printStackTrace(System.err);
@@ -20,20 +20,5 @@ public class Main extends JFrame{
         });
     }
 
-    public Main() throws HeadlessException{
-        this("untitled");
-    }
-    public Main(String title) throws HeadlessException {
-        super(title);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(800, 600);
 
-        JPanel contentPanel = new JPanel();
-
-        setContentPane(contentPanel);
-        contentPanel.setLayout(null);
-
-        Panel panel = new Panel();
-        contentPanel.add(panel);
-    }
 }
