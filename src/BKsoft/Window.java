@@ -32,7 +32,7 @@ public class Window extends JFrame {
         //login container:
         JPanel loginContainer = new JPanel();
         loginContainer.setLayout(null);
-        loginContainer.setBounds(50,50,300,25);
+        loginContainer.setBounds(50,50,250,25);
 
         JLabel loginTextLabel = new JLabel("login");
         loginTextLabel.setBounds(0,0,75,25);
@@ -47,7 +47,7 @@ public class Window extends JFrame {
         //password container:
         JPanel passwordContainer = new JPanel();
         passwordContainer.setLayout(null);
-        passwordContainer.setBounds(50,100,300,25);
+        passwordContainer.setBounds(50,100,250,25);
 
         JLabel passwordTextLabel=new JLabel("Password");
         passwordTextLabel.setBounds(0,0,75,25);
