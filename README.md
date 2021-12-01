@@ -1,2 +1,2 @@
-# Lab-2-logowanie
+# Lab-3-logowanie
 Pierwsze zadanie ze swinga
