@@ -5,6 +5,8 @@ import javax.swing.border.EmptyBorder;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.InputEvent;
+import java.awt.event.KeyEvent;
 import java.io.FileNotFoundException;
 
 public class Window extends JFrame {
@@ -71,6 +73,27 @@ public class Window extends JFrame {
             }
         });
         contentPanel.add(loginButton);
+
+        //menuBar:
+        JMenuBar menuBar=new JMenuBar();
+        setJMenuBar(menuBar);
+
+        JMenu menu=new JMenu("Options");
+        contentPanel.add(menu);
+
+        JMenuItem loginMB=new JMenuItem("Login");
+        loginMB.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    loginClicked(loginTextField.getText(), passwordTextField.getText(), contentPanel);
+                } catch (FileNotFoundException fileNotFoundException) {
+                    fileNotFoundException.printStackTrace();
+                }
+            }
+        });
+        menu.add(loginMB);
+        menuBar.add(menu);
     }
 
     private void loginClicked(String login, String haslo, JPanel contentPanel) throws FileNotFoundException {
@@ -82,4 +105,5 @@ public class Window extends JFrame {
         }
         else contentPanel.setBackground(Color.RED);
     }
+
 }
