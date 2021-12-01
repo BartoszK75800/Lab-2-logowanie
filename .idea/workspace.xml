@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72f4df5a-db04-4683-a7fa-06dbc26c7576" name="Default Changelist" comment="działające okienko">
-      <change afterPath="$PROJECT_DIR$/src/BKsoft/Window.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BKsoft/Database.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BKsoft/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BKsoft/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BKsoft/Panel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BKsoft/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BKsoft/Window.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

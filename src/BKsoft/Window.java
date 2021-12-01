@@ -5,6 +5,7 @@ import javax.swing.border.EmptyBorder;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.FileNotFoundException;
 
 public class Window extends JFrame {
     public Window() throws HeadlessException {
@@ -15,7 +16,7 @@ public class Window extends JFrame {
         build();
     }
 
-    public void build(){
+    public void build() {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(800, 600);
 
@@ -41,17 +42,6 @@ public class Window extends JFrame {
 
         contentPanel.add(loginContainer);
 
-        //przycisk do login:
-        JButton loginButton = new JButton("login");
-        loginButton.setBounds(200, 200, 100, 25);
-        loginButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                //tutaj se wklep funkcję
-            }
-        });
-        contentPanel.add(loginButton);
-
         //password container:
         JPanel passwordContainer = new JPanel();
         passwordContainer.setLayout(null);
@@ -66,5 +56,30 @@ public class Window extends JFrame {
         passwordContainer.add(passwordTextField);
 
         contentPanel.add(passwordContainer);
+
+        //przycisk do login:
+        JButton loginButton = new JButton("login");
+        loginButton.setBounds(200, 200, 100, 25);
+        loginButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    loginClicked(loginTextField.getText(), passwordTextField.getText(), contentPanel);
+                } catch (FileNotFoundException fileNotFoundException) {
+                    fileNotFoundException.printStackTrace();
+                }
+            }
+        });
+        contentPanel.add(loginButton);
+    }
+
+    private void loginClicked(String login, String haslo, JPanel contentPanel) throws FileNotFoundException {
+        Database database = new Database();
+        database.loadDB();
+
+        if(database.check(login, haslo)==true){
+            contentPanel.setBackground(Color.GREEN);
+        }
+        else contentPanel.setBackground(Color.RED);
     }
 }
